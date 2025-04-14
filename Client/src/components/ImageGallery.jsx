@@ -164,7 +164,7 @@ const ImageGallery = () => {
           <div>
             <button
               onClick={deleteAllImages}
-              className=" w-full mt-10 cursor-pointer hover:bg-red-600 p-2 rounded-4xl border-b-2 border-red-500"
+              className=" w-full mt-10 cursor-pointer hover:bg-red-600 p-2  border-b-2 border-red-500"
             >
               Delete All Images
             </button>
