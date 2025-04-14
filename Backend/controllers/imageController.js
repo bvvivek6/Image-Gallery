@@ -10,7 +10,7 @@ const uploadImage = async (req, res) => {
       imageUrl: file.path,
       publicId: file.filename,
     }));
-    const images = await imageModel.insertMany(image);
+    await imageModel.insertMany(image);
     res.status(200).json({
       status: " success",
       message: "Image uploaded successfully",
@@ -122,7 +122,7 @@ const deleteImage = async (req, res) => {
 
     res.status(200).json({
       status: "success",
-      message: "All images deleted successfully",
+      message: "Image deleted successfully",
       success: true,
     });
   } catch (err) {
